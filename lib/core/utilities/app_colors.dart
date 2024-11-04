@@ -5,4 +5,5 @@ abstract class AppColors{
    static const Color black54 = Colors.black54;
    static const Color gray = Colors.grey;
    static const Color black = Colors.black;
+   static const Color onBoarding = Color(0xff2c2b34);
 }

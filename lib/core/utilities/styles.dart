@@ -5,7 +5,7 @@ import 'app_colors.dart';
 abstract class Styles{
 
   static const style32 = TextStyle(
-    color: AppColors.black54,
+    color: AppColors.white,
     fontSize: 32,
     fontWeight: FontWeight.bold
   );
