@@ -7,5 +7,20 @@
   "enjoyTheLuxury": "Enjoy the luxury",
   "@enjoyTheLuxury": {
     "description" : "Enjoy the luxury"
+  },
+
+  "premiumAndPrestigeCarDailyRental": "Premium and prestige car daily rental",
+  "@premiumAndPrestigeCarDailyRental": {
+    "description" : "Premium and prestige car daily rental"
+  },
+
+  "experienceTheThrillAtALowerPrice": "Experience the thrill at a lower price",
+  "@experienceTheThrillAtALowerPrice": {
+    "description" : "Experience the thrill at a lower price"
+  },
+
+  "letsGo" : "Let's go",
+  "@letsGo": {
+    "description": "Let's go"
   }
 }

@@ -2,9 +2,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:rent_car/core/di/di.dart';
 import 'package:rent_car/core/utilities/localization/l10n.dart';
+import 'package:rent_car/features/onboarding/presentation/pages/on_boarding.dart';
 import 'package:rent_car/firebase_options.dart';
-import 'package:flutter_localization/flutter_localization.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
 void main() async {
   configureDependencies();
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,19 +22,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       supportedLocales: L10n.all,
       locale: const Locale('en'),
-      localizationsDelegates: const[
-
+      localizationsDelegates: const [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate
       ],
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            AppLocalizationa.
-          ),
-        ),
+
+      home: const Scaffold(
+        body: OnBoarding(),
       ),
     );
   }
 }
-
-
-
