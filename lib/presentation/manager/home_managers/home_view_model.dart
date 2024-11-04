@@ -7,10 +7,9 @@ import 'package:rent_car/presentation/manager/home_managers/home_states.dart';
 
 @injectable
 class HomeViewModel extends Cubit<HomeStates>{
+
   @factory
   HomeViewModel() :super(InitialState());
-
-
   void doAction(HomeActions action){
     switch (action) {
       case NavigateToCarScreenDetailsAction():

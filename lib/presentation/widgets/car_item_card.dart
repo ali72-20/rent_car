@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:rent_car/core/simple_observer.dart';
 import 'package:rent_car/core/utilities/app_colors.dart';
 import 'package:rent_car/presentation/manager/home_managers/home_actions.dart';
 import 'package:rent_car/presentation/manager/home_managers/home_view_model.dart';

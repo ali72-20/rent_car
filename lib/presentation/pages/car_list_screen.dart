@@ -7,13 +7,13 @@ import '../../domain/entities/car.dart';
 
 class CarListScreen extends StatelessWidget {
    CarListScreen({super.key});
-  List<CarItemCard> list = [
-    CarItemCard(car: Car("BMW", 10, 45, 100),),
-    CarItemCard(car: Car("BMW", 10, 45, 100),),
-    CarItemCard(car: Car("BMW", 10, 45, 100),),
-    CarItemCard(car: Car("BMW", 10, 45, 100),),
-    CarItemCard(car: Car("BMW", 10, 45, 100),),
-
+  List<Car> list = [
+    Car("BMW", 10, 45, 100),
+    Car("BMW", 10, 45, 100),
+    Car("BMW", 10, 45, 100),
+    Car("BMW", 10, 45, 100),
+    Car("BMW", 10, 45, 100),
+    Car("BMW", 10, 45, 100),
   ];
 
   @override
@@ -29,7 +29,7 @@ class CarListScreen extends StatelessWidget {
         physics: const PageScrollPhysics(),
         itemCount: list.length,
         itemBuilder: (context, index) {
-          return list[index];
+          return CarItemCard(car: list[index]);
         },
       ),
     );
