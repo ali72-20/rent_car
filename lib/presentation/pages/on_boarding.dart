@@ -2,15 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:go_router/go_router.dart';
-import 'package:rent_car/core/app_routes.dart';
 import 'package:rent_car/core/di/di.dart';
 import 'package:rent_car/core/utilities/app_colors.dart';
 import 'package:rent_car/core/utilities/app_images.dart';
 import 'package:rent_car/presentation/manager/on_boaring_managers/on_boarding_actions.dart';
-import 'package:rent_car/presentation/manager/on_boaring_managers/on_boarding_states.dart';
-import 'package:rent_car/presentation/pages/blocs/on_boarding_bloc.dart';
-
 import '../../../../core/utilities/styles.dart';
 import '../manager/on_boaring_managers/on_boarding_view_model.dart';
 
@@ -31,9 +26,10 @@ class OnBoarding extends StatelessWidget {
               flex: 2,
               child: Container(
                 decoration: const BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage(AppImages.onBoaring),
-                        fit: BoxFit.cover)),
+                  image: DecorationImage(
+                      image: AssetImage(AppImages.onBoaring),
+                      fit: BoxFit.cover),
+                ),
               ),
             ),
             Expanded(
@@ -73,7 +69,7 @@ class OnBoarding extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const OnBoardingBloc()
+                  OnBoarding()
                 ],
               ),
             )

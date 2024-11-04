@@ -19,6 +19,10 @@
     "description" : "Experience the thrill at a lower price"
   },
 
+  "chooseYourCar" : "Choose your car",
+  "@chooseYourCar": {
+    "description": "Choose Your car"
+  },
   "letsGo" : "Let's go",
   "@letsGo": {
     "description": "Let's go"
