@@ -14,7 +14,7 @@ abstract class AppRouter {
       ),
       GoRoute(
         path: homePath,
-        builder: (context, state) => const HomeScreen(),
+        builder: (context, state) =>  HomeScreen(),
       ),
     ],
   );
