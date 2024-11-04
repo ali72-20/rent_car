@@ -4,10 +4,10 @@ import 'package:rent_car/core/utilities/app_colors.dart';
 
 import '../../core/utilities/app_images.dart';
 import '../../core/utilities/styles.dart';
-import '../../domain/entities/car.dart';
+import '../../domain/entities/car_entity.dart';
 
 class CatDetailsCard extends StatelessWidget {
-  final Car car;
+  final CarEntity car;
 
   const CatDetailsCard({super.key, required this.car});
 
@@ -21,7 +21,7 @@ class CatDetailsCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           boxShadow: const [
             BoxShadow(
-                color: AppColors.cardBorder, blurRadius: 10, spreadRadius: 5)
+                color: AppColors.black12, blurRadius: 10, spreadRadius: 5)
           ]),
       child: Column(
         children: [

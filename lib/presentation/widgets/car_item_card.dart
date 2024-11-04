@@ -7,10 +7,10 @@ import 'package:rent_car/presentation/manager/home_managers/home_view_model.dart
 
 import '../../core/utilities/app_images.dart';
 import '../../core/utilities/styles.dart';
-import '../../domain/entities/car.dart';
+import '../../domain/entities/car_entity.dart';
 
 class CarItemCard extends StatelessWidget {
-  final Car car;
+  final CarEntity car;
   const CarItemCard({super.key, required this.car});
 
   @override
@@ -29,7 +29,7 @@ class CarItemCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           boxShadow:  const [
             BoxShadow(
-              color: AppColors.cardBorder,
+              color: AppColors.black12,
               blurRadius: 10,
               spreadRadius: 5
             )

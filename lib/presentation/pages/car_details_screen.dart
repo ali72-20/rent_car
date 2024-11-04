@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../domain/entities/car.dart';
+import 'package:rent_car/presentation/widgets/map_card.dart';
+import 'package:rent_car/presentation/widgets/user_card.dart';
+import '../../domain/entities/car_entity.dart';
 import '../widgets/cat_details_card.dart';
 
 class CarDetailsScreen extends StatelessWidget {
@@ -14,8 +16,23 @@ class CarDetailsScreen extends StatelessWidget {
           trailing: Icon(Icons.info_outline),
         ),
       ),
-      body: CatDetailsCard(
-        car: Car("BMW", 10, 45, 100),
+      body: Column(
+        children: [
+          CatDetailsCard(
+            car: CarEntity("BMW", 20, 45, 100),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const Row(
+            children: [
+              UserCard(),
+              SizedBox(width: 20,),
+              MapCard()
+            ],
+          )
+
+        ],
       ),
     );
   }

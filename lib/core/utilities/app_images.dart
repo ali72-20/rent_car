@@ -4,4 +4,5 @@ abstract class AppImages{
   static const String pump = "assets/pump.png";
   static const String gps = "assets/gps.png";
   static const String user = "assets/user.png";
+  static const String maps = "assets/maps.png";
 }

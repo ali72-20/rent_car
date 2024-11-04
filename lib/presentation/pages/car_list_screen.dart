@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:rent_car/core/utilities/app_colors.dart';
 import 'package:rent_car/presentation/widgets/car_item_card.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import '../../domain/entities/car.dart';
+import '../../domain/entities/car_entity.dart';
 
 class CarListScreen extends StatelessWidget {
    CarListScreen({super.key});
-  List<Car> list = [
-    Car("BMW", 10, 45, 100),
-    Car("BMW", 10, 45, 100),
-    Car("BMW", 10, 45, 100),
-    Car("BMW", 10, 45, 100),
-    Car("BMW", 10, 45, 100),
-    Car("BMW", 10, 45, 100),
+  List<CarEntity> list = [
+    CarEntity("BMW", 10, 45, 100),
+    CarEntity("BMW", 10, 45, 100),
+    CarEntity("BMW", 10, 45, 100),
+    CarEntity("BMW", 10, 45, 100),
+    CarEntity("BMW", 10, 45, 100),
+    CarEntity("BMW", 10, 45, 100),
   ];
 
   @override
