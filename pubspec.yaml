@@ -37,6 +37,13 @@ dependencies:
   cupertino_icons: ^1.0.6
   cloud_firestore: ^5.4.4
   firebase_core: ^3.6.0
+  shared_preferences: ^2.3.2
+  flutter_localization: ^0.2.2
+  # add injectable to your dependencies
+  injectable:
+  # add get_it
+  get_it:
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
@@ -48,20 +55,25 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
+  # add the generator to your dev_dependencies
+  injectable_generator:
+  # add build runner if not already added
+  build_runner:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  generate: true
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+    - /Users/rebuytech/StudioProjects/rent_car/lib/core/utilities/assets/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

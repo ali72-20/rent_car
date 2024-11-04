@@ -1,0 +1,11 @@
+{
+  "premiumCars": "Premium cars",
+  "@premiumCars": {
+    "description" : "Premium cars"
+  },
+
+  "enjoyTheLuxury": "Enjoy the luxury",
+  "@enjoyTheLuxury": {
+    "description" : "Enjoy the luxury"
+  }
+}
