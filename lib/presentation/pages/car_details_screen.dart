@@ -6,9 +6,14 @@ class CarDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text("Tfdfgdf"),
+    return Scaffold(
+      appBar: AppBar(
+          title: const ListTile(
+        leading: Icon(Icons.arrow_back_ios_new),
+        trailing: Icon(Icons.info_outline),
+      )),
+      body: Column(
+        children: [],
       ),
     );
   }

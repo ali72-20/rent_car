@@ -6,14 +6,16 @@ import 'package:rent_car/core/di/di.dart';
 import 'package:rent_car/core/utilities/app_colors.dart';
 import 'package:rent_car/core/utilities/app_images.dart';
 import 'package:rent_car/presentation/manager/on_boaring_managers/on_boarding_actions.dart';
+import 'package:rent_car/presentation/pages/blocs/on_boarding_bloc.dart';
 import '../../../../core/utilities/styles.dart';
 import '../manager/on_boaring_managers/on_boarding_view_model.dart';
 
 class OnBoarding extends StatelessWidget {
-  OnBoarding({super.key});
+
+   OnBoarding({super.key});
+
 
   final viewModel = getIt.get<OnBoardingViewModel>();
-
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -69,13 +71,13 @@ class OnBoarding extends StatelessWidget {
                       ),
                     ),
                   ),
-                  OnBoarding()
                 ],
               ),
-            )
+            ),
+            const OnBoardingBloc()
           ],
-        ),
-      ),
+        )
+      )
     );
   }
 }
