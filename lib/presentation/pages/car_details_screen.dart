@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:rent_car/core/app_routes.dart';
 import 'package:rent_car/core/utilities/styles.dart';
+import 'package:rent_car/presentation/pages/home_screen.dart';
 import 'package:rent_car/presentation/widgets/map_card.dart';
 import 'package:rent_car/presentation/widgets/more_cards.dart';
 import 'package:rent_car/presentation/widgets/user_card.dart';
@@ -14,9 +17,18 @@ class CarDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:  ListTile(
-          leading: const Icon(Icons.arrow_back_ios_new),
-          title: Text(AppLocalizations.of(context)!.information, style: Styles.style20, textAlign: TextAlign.center,),
+        title: ListTile(
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back_ios_new),
+            onPressed: () {
+              context.go(AppRouter.homePath);
+            },
+          ),
+          title: Text(
+            AppLocalizations.of(context)!.information,
+            style: Styles.style20,
+            textAlign: TextAlign.center,
+          ),
           trailing: const Icon(Icons.info_outline),
         ),
       ),
@@ -33,7 +45,9 @@ class CarDetailsScreen extends StatelessWidget {
             child: Row(
               children: [
                 UserCard(),
-                SizedBox(width: 20,),
+                SizedBox(
+                  width: 20,
+                ),
                 MapCard()
               ],
             ),
@@ -42,9 +56,9 @@ class CarDetailsScreen extends StatelessWidget {
             padding: const EdgeInsets.all(20),
             child: Column(
               children: [
-                 MoreCard(car: CarEntity("BMW-1", 20, 45, 100)),
-                 MoreCard(car: CarEntity("BMW-2", 30, 45, 150)),
-                 MoreCard(car: CarEntity("BMW-2", 30, 45, 150)),
+                MoreCard(car: CarEntity("BMW-1", 20, 45, 100)),
+                MoreCard(car: CarEntity("BMW-2", 30, 45, 150)),
+                MoreCard(car: CarEntity("BMW-2", 30, 45, 150)),
               ],
             ),
           )

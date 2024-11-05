@@ -23,6 +23,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      theme: ThemeData.from(colorScheme: const ColorScheme.light()).copyWith(
+        pageTransitionsTheme: const PageTransitionsTheme(
+          builders: <TargetPlatform,PageTransitionsBuilder>{
+            TargetPlatform.android: FadeUpwardsPageTransitionsBuilder()
+          }
+        )
+      ),
       routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
       supportedLocales: L10n.all,
