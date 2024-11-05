@@ -8,4 +8,5 @@ abstract class AppColors{
    static const Color onBoarding = Color(0xff2c2b34);
    static const Color carCard = Color(0xffF3F3F3);
    static const Color black12 = Colors.black12;
+   static const Color moreCardColor =  Color(0xff212020);
 }

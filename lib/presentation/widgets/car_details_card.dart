@@ -6,10 +6,10 @@ import '../../core/utilities/app_images.dart';
 import '../../core/utilities/styles.dart';
 import '../../domain/entities/car_entity.dart';
 
-class CatDetailsCard extends StatelessWidget {
+class CarDetailsCard extends StatelessWidget {
   final CarEntity car;
 
-  const CatDetailsCard({super.key, required this.car});
+  const CarDetailsCard({super.key, required this.car});
 
   @override
   Widget build(BuildContext context) {
