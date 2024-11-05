@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:rent_car/core/app_routes.dart';
 import 'package:rent_car/core/utilities/styles.dart';
-import 'package:rent_car/presentation/pages/home_screen.dart';
 import 'package:rent_car/presentation/widgets/map_card.dart';
 import 'package:rent_car/presentation/widgets/more_cards.dart';
 import 'package:rent_car/presentation/widgets/user_card.dart';
