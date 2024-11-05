@@ -37,5 +37,8 @@ abstract class Styles{
     fontSize: 10,
     color: AppColors.gray
   );
-
+  static const style12 = TextStyle(
+      fontSize: 12,
+      color: AppColors.black
+  );
 }

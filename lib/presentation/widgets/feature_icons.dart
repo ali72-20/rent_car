@@ -24,7 +24,7 @@ Widget featureIcon(IconData icon, String title, String subTitle){
   return Container(
     width: 100,
     height: 100,
-    padding: EdgeInsets.all(5),
+    padding: const EdgeInsets.all(5),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(10),
       border: Border.all(color: AppColors.gray, width: 1)
@@ -32,7 +32,7 @@ Widget featureIcon(IconData icon, String title, String subTitle){
     child: Column(
       children: [
         Icon(icon, size: 28,),
-        Text(title),
+        Text(title, style:Styles.style12,),
         Text(subTitle, style: Styles.style10,)
       ],
     ),

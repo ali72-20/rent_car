@@ -34,7 +34,7 @@ class CarMapCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Text(
                   "car model",
