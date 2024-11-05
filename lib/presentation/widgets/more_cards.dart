@@ -9,7 +9,7 @@ class MoreCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(10),
+      padding: const EdgeInsets.all(8),
       margin: const EdgeInsets.only(bottom: 10),
       decoration: BoxDecoration(
           color: AppColors.moreCardColor,

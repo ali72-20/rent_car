@@ -44,8 +44,7 @@ class CarDetailsScreen extends StatelessWidget {
               children: [
                  MoreCard(car: CarEntity("BMW-1", 20, 45, 100)),
                  MoreCard(car: CarEntity("BMW-2", 30, 45, 150)),
-                 MoreCard(car: CarEntity("BMW-3", 40, 45, 200)),
-                 MoreCard(car: CarEntity("BMW-4", 50, 45, 300)),
+                 MoreCard(car: CarEntity("BMW-2", 30, 45, 150)),
               ],
             ),
           )

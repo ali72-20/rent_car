@@ -67,7 +67,7 @@ class OnBoarding extends StatelessWidget {
                       child: Text(
                         AppLocalizations.of(context)!.letsGo,
                         style: Styles.style16
-                            .copyWith(fontWeight: FontWeight.bold),
+                            .copyWith(fontWeight: FontWeight.bold,color: AppColors.black),
                       ),
                     ),
                   ),
