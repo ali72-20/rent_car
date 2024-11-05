@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import '../../core/utilities/app_colors.dart';
 import '../../core/utilities/styles.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import 'feature_icons.dart';
 class FeaturesMapCard extends StatelessWidget {
   const FeaturesMapCard({super.key});
 
@@ -28,7 +30,7 @@ class FeaturesMapCard extends StatelessWidget {
               AppLocalizations.of(context)!.features,
               style: Styles.style24.copyWith(color: AppColors.black),
             ),
-            //featureIcon
+            const FeatureIcons(),
             const SizedBox(
               height: 20,
             ),
@@ -36,7 +38,7 @@ class FeaturesMapCard extends StatelessWidget {
               mainAxisAlignment:MainAxisAlignment.spaceBetween,
               children: [
                 const Text(
-                  "\$ car price per Hour/day",
+                  "\$ ${45} Hour/day",
                   style: Styles.style22,
                 ),
                 ElevatedButton(

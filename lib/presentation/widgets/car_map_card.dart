@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../core/utilities/app_colors.dart';
+import '../../core/utilities/app_images.dart';
 import '../../core/utilities/styles.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'distance_and_fuel_map_card_row.dart';
 import 'features_map_card.dart';
@@ -47,7 +47,12 @@ class CarMapCard extends StatelessWidget {
               ],
             ),
           ),
-          const FeaturesMapCard()
+          const FeaturesMapCard(),
+          Positioned(
+            top: 50,
+            right: 30,
+            child: Image.asset(AppImages.whiteCar),
+          ),
         ],
       ),
     );

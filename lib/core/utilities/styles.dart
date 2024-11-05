@@ -33,4 +33,9 @@ abstract class Styles{
     fontWeight: FontWeight.bold,
   );
 
+  static const style10 = TextStyle(
+    fontSize: 10,
+    color: AppColors.gray
+  );
+
 }

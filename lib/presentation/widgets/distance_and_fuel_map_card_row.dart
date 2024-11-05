@@ -20,7 +20,7 @@ class DistanceAndFuelMapCardRow extends StatelessWidget {
           width: 5,
         ),
         Text(
-          "> car distance km",
+          "> ${10} km",
           style: Styles.style14,
         ),
         SizedBox(
@@ -32,7 +32,7 @@ class DistanceAndFuelMapCardRow extends StatelessWidget {
           size: 14,
         ),
         Text(
-          "> car fuel capacity L",
+          " ${45} L",
           style: Styles.style14,
         ),
       ],

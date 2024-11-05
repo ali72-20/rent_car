@@ -3,6 +3,7 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:go_router/go_router.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:rent_car/core/app_routes.dart';
+import 'package:rent_car/core/utilities/app_images.dart';
 import 'package:rent_car/presentation/widgets/car_details_card.dart';
 
 import '../../domain/entities/car_entity.dart';
@@ -14,8 +15,10 @@ class MapsDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
+        elevation: 0,
         leading: IconButton(
             onPressed: () {
               context.go(AppRouter.carDetailsPath);
@@ -37,12 +40,7 @@ class MapsDetails extends StatelessWidget {
               ),
             ],
           ),
-          const Positioned(
-            bottom: 0,
-            left: 0,
-            right: 0,
-            child: CarMapCard()
-          ),
+          const Positioned(bottom: 0, left: 0, right: 0, child: CarMapCard()),
         ],
       ),
     );
