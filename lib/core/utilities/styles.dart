@@ -22,5 +22,15 @@ abstract class Styles{
       fontSize: 14,
       color: AppColors.white,
   );
+  static const style24 = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+    color: AppColors.white,
+  );
+
+  static const style22 = TextStyle(
+    fontSize: 22,
+    fontWeight: FontWeight.bold,
+  );
 
 }

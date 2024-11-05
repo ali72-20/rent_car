@@ -9,4 +9,6 @@ abstract class AppColors{
    static const Color carCard = Color(0xffF3F3F3);
    static const Color black12 = Colors.black12;
    static const Color moreCardColor =  Color(0xff212020);
+   static const Color red = Colors.red;
+   static const Color black38 = Colors.black38;
 }

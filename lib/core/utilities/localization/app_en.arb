@@ -31,5 +31,13 @@
   "information" : "Information",
   "@information": {
     "description": "Information"
+  },
+  "features": "Features",
+  "@features": {
+    "descriptions": "Features"
+  },
+  "bookNow": "Book now",
+  "@bookNow": {
+    "descriptions": "Book now"
   }
 }
