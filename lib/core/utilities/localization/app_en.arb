@@ -26,5 +26,10 @@
   "letsGo" : "Let's go",
   "@letsGo": {
     "description": "Let's go"
+  },
+
+  "information" : "Information",
+  "@information": {
+    "description": "Information"
   }
 }
