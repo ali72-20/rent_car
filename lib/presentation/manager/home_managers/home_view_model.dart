@@ -10,6 +10,12 @@ class HomeViewModel extends Cubit<HomeStates>{
 
   @factory
   HomeViewModel() :super(InitialState());
+
+  /// This function Get Home Screen action to handel user action in view
+  ///
+  ///
+  /// This function get parameter action with HomeActions and emit
+  /// state according to user action
   void doAction(HomeActions action){
     switch (action) {
       case NavigateToCarScreenDetailsAction():
