@@ -1,0 +1,43 @@
+{
+  "premiumCars": "Premium cars",
+  "@premiumCars": {
+    "description" : "Premium cars"
+  },
+
+  "enjoyTheLuxury": "Enjoy the luxury",
+  "@enjoyTheLuxury": {
+    "description" : "Enjoy the luxury"
+  },
+
+  "premiumAndPrestigeCarDailyRental": "Premium and prestige car daily rental",
+  "@premiumAndPrestigeCarDailyRental": {
+    "description" : "Premium and prestige car daily rental"
+  },
+
+  "experienceTheThrillAtALowerPrice": "Experience the thrill at a lower price",
+  "@experienceTheThrillAtALowerPrice": {
+    "description" : "Experience the thrill at a lower price"
+  },
+
+  "chooseYourCar" : "Choose your car",
+  "@chooseYourCar": {
+    "description": "Choose Your car"
+  },
+  "letsGo" : "Let's go",
+  "@letsGo": {
+    "description": "Let's go"
+  },
+
+  "information" : "Information",
+  "@information": {
+    "description": "Information"
+  },
+  "features": "Features",
+  "@features": {
+    "descriptions": "Features"
+  },
+  "bookNow": "Book now",
+  "@bookNow": {
+    "descriptions": "Book now"
+  }
+}
