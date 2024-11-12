@@ -8,12 +8,12 @@ import '../../domain/entities/car_entity.dart';
 class CarListScreen extends StatelessWidget {
    CarListScreen({super.key});
   List<CarEntity> list = [
-    CarEntity("BMW", 10, 45, 100),
-    CarEntity("BMW", 10, 45, 100),
-    CarEntity("BMW", 10, 45, 100),
-    CarEntity("BMW", 10, 45, 100),
-    CarEntity("BMW", 10, 45, 100),
-    CarEntity("BMW", 10, 45, 100),
+    CarEntity(model: "BWM", distance: 10, fuelCapacity: 10,pricePerHour: 25),
+    CarEntity(model: "BWM", distance: 10, fuelCapacity: 10,pricePerHour: 25),
+    CarEntity(model: "BWM", distance: 10, fuelCapacity: 10,pricePerHour: 25),
+    CarEntity(model: "BWM", distance: 10, fuelCapacity: 10,pricePerHour: 25),
+    CarEntity(model: "BWM", distance: 10, fuelCapacity: 10,pricePerHour: 25),
+    CarEntity(model: "BWM", distance: 10, fuelCapacity: 10,pricePerHour: 25),
   ];
 
   @override
