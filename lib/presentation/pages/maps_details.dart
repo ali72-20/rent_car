@@ -3,10 +3,6 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:go_router/go_router.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:rent_car/core/app_routes.dart';
-import 'package:rent_car/core/utilities/app_images.dart';
-import 'package:rent_car/presentation/widgets/car_details_card.dart';
-
-import '../../domain/entities/car_entity.dart';
 import '../widgets/car_map_card.dart';
 
 class MapsDetails extends StatelessWidget {

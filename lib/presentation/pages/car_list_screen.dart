@@ -5,16 +5,41 @@ import 'package:rent_car/presentation/widgets/car_item_card.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../domain/entities/car_entity.dart';
 
-class CarListScreen extends StatelessWidget {
-   CarListScreen({super.key});
+class CarListScreen extends StatefulWidget {
+  CarListScreen({super.key});
+
+  @override
+  State<CarListScreen> createState() => _CarListScreenState();
+}
+
+class _CarListScreenState extends State<CarListScreen> {
+  GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
   List<CarEntity> list = [
-    CarEntity("BMW", 10, 45, 100),
-    CarEntity("BMW", 10, 45, 100),
-    CarEntity("BMW", 10, 45, 100),
-    CarEntity("BMW", 10, 45, 100),
-    CarEntity("BMW", 10, 45, 100),
-    CarEntity("BMW", 10, 45, 100),
+    CarEntity(model: "BWM", distance: 10, fuelCapacity: 10, pricePerHour: 25),
+    CarEntity(model: "BWM", distance: 10, fuelCapacity: 10, pricePerHour: 25),
+    CarEntity(model: "BWM", distance: 10, fuelCapacity: 10, pricePerHour: 25),
+    CarEntity(model: "BWM", distance: 10, fuelCapacity: 10, pricePerHour: 25),
+    CarEntity(model: "BWM", distance: 10, fuelCapacity: 10, pricePerHour: 25),
+    CarEntity(model: "BWM", distance: 10, fuelCapacity: 10, pricePerHour: 25),
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (_listKey.currentState != null) _addItems();
+    });
+  }
+
+  void _addItems() {
+    for (int i = 0; i < list.length; i++) {
+      Future.delayed(Duration(milliseconds: 100 * i), () {
+        if (_listKey.currentState != null && i < list.length) {
+          _listKey.currentState!.insertItem(i);
+        }
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,11 +50,22 @@ class CarListScreen extends StatelessWidget {
         foregroundColor: AppColors.black,
         centerTitle: true,
       ),
-      body: ListView.builder(
-        physics: const PageScrollPhysics(),
-        itemCount: list.length,
-        itemBuilder: (context, index) {
-          return CarItemCard(car: list[index]);
+      body: AnimatedList(
+        key: _listKey,
+        shrinkWrap: true,
+        initialItemCount: list.length,
+        itemBuilder: (context, index, animation) {
+          if(index < list.length) {
+            return SlideTransition(
+              position: Tween<Offset>(
+                begin: const Offset(0, 1),
+                end: Offset.zero,
+              ).animate(animation),
+              child: CarItemCard(car: list[index]),
+            );
+          }else{
+           return const SizedBox();
+          }
         },
       ),
     );

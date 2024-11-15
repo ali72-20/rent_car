@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../core/utilities/app_colors.dart';
@@ -51,7 +52,10 @@ class CarMapCard extends StatelessWidget {
           Positioned(
             top: 50,
             right: 30,
-            child: Image.asset(AppImages.whiteCar),
+            child: ZoomIn(
+              duration: const Duration(milliseconds: 1000),
+              child: Image.asset(AppImages.whiteCar),
+            ),
           ),
         ],
       ),

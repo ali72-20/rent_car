@@ -34,7 +34,7 @@ class CarDetailsScreen extends StatelessWidget {
       body: Column(
         children: [
           CarDetailsCard(
-            car: CarEntity("BMW", 20, 45, 100),
+            car: CarEntity(model: "BWM", distance: 10, fuelCapacity: 10,pricePerHour: 25),
           ),
           const SizedBox(
             height: 20,
@@ -55,9 +55,9 @@ class CarDetailsScreen extends StatelessWidget {
             padding: const EdgeInsets.all(20),
             child: Column(
               children: [
-                MoreCard(car: CarEntity("BMW-1", 20, 45, 100)),
-                MoreCard(car: CarEntity("BMW-2", 30, 45, 150)),
-                MoreCard(car: CarEntity("BMW-2", 30, 45, 150)),
+                MoreCard(car: CarEntity(model: "BWM", distance: 10, fuelCapacity: 10,pricePerHour: 25),),
+                MoreCard(car: CarEntity(model: "BWM", distance: 10, fuelCapacity: 10,pricePerHour: 25),),
+                MoreCard(car:CarEntity(model: "BWM", distance: 10, fuelCapacity: 10,pricePerHour: 25),),
               ],
             ),
           )

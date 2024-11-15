@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -34,11 +35,14 @@ class OnBoarding extends StatelessWidget {
             children: [
               Expanded(
                 flex: 2,
-                child: Container(
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage(AppImages.onBoaring),
-                        fit: BoxFit.cover),
+                child: BounceInLeft(
+                  duration: const Duration(milliseconds: 1900),
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage(AppImages.onBoaring),
+                          fit: BoxFit.cover),
+                    ),
                   ),
                 ),
               ),
@@ -47,35 +51,44 @@ class OnBoarding extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      "${AppLocalizations.of(context)!.premiumCars}\n"
-                      "${AppLocalizations.of(context)!.enjoyTheLuxury}",
-                      style: Styles.style32,
+                    FadeInLeft(
+                      duration: const Duration(milliseconds: 1900),
+                      child: Text(
+                        "${AppLocalizations.of(context)!.premiumCars}\n"
+                        "${AppLocalizations.of(context)!.enjoyTheLuxury}",
+                        style: Styles.style32,
+                      ),
                     ),
                     const SizedBox(
                       height: 10,
                     ),
-                    Text(
-                      "${AppLocalizations.of(context)!.premiumAndPrestigeCarDailyRental}\n${AppLocalizations.of(context)!.experienceTheThrillAtALowerPrice}",
-                      style: Styles.style16,
+                    FadeInLeft(
+                      duration: const Duration(milliseconds: 1900),
+                      child: Text(
+                        "${AppLocalizations.of(context)!.premiumAndPrestigeCarDailyRental}\n${AppLocalizations.of(context)!.experienceTheThrillAtALowerPrice}",
+                        style: Styles.style16,
+                      ),
                     ),
                     const SizedBox(
                       height: 10,
                     ),
-                    SizedBox(
-                      width: 320,
-                      height: 54,
-                      child: ElevatedButton(
-                        onPressed: () {
-                          viewModel.doAction(NavigateToHomeScreenAction());
-                        },
-                        style: ElevatedButton.styleFrom(
-                            foregroundColor: AppColors.black,
-                            backgroundColor: AppColors.white),
-                        child: Text(
-                          AppLocalizations.of(context)!.letsGo,
-                          style: Styles.style16
-                              .copyWith(fontWeight: FontWeight.bold,color: AppColors.black),
+                    FadeInUp(
+                      duration: const Duration(milliseconds: 1900),
+                      child: SizedBox(
+                        width: 320,
+                        height: 54,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            viewModel.doAction(NavigateToHomeScreenAction());
+                          },
+                          style: ElevatedButton.styleFrom(
+                              foregroundColor: AppColors.black,
+                              backgroundColor: AppColors.white),
+                          child: Text(
+                            AppLocalizations.of(context)!.letsGo,
+                            style: Styles.style16
+                                .copyWith(fontWeight: FontWeight.bold,color: AppColors.black),
+                          ),
                         ),
                       ),
                     ),
